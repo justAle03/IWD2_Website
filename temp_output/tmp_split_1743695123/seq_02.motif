@@ -1,0 +1,36 @@
+########################################
+# Program: patmatmotifs
+# Rundate: Thu  3 Apr 2025 16:45:26
+# Commandline: patmatmotifs
+#    -auto yes
+#    -sequence temp_output/tmp_split_1743695123/seq_02
+#    -outfile temp_output/tmp_split_1743695123/seq_02.motif
+#    -prune yes
+# Report_format: dbmotif
+# Report_file: temp_output/tmp_split_1743695123/seq_02.motif
+########################################
+
+#=======================================
+#
+# Sequence: XP_071654328.1     from: 1   to: 468
+# HitCount: 1
+#
+# Full: No
+# Prune: Yes
+# Data_file: /usr/share/EMBOSS/data/PROSITE/prosite.lines
+#
+#=======================================
+
+Length = 11
+Start = position 211 of sequence
+End = position 221 of sequence
+
+Motif = THIOL_PROTEASE_HIS
+
+VGTLALHHALLAAGVDIDWSI
+     |         |
+   211         221
+
+
+#---------------------------------------
+#---------------------------------------

@@ -1,0 +1,46 @@
+########################################
+# Program: patmatmotifs
+# Rundate: Thu  3 Apr 2025 16:45:29
+# Commandline: patmatmotifs
+#    -auto yes
+#    -sequence temp_output/tmp_split_1743695123/seq_134
+#    -outfile temp_output/tmp_split_1743695123/seq_134.motif
+#    -prune yes
+# Report_format: dbmotif
+# Report_file: temp_output/tmp_split_1743695123/seq_134.motif
+########################################
+
+#=======================================
+#
+# Sequence: XP_065507259.1     from: 1   to: 358
+# HitCount: 2
+#
+# Full: No
+# Prune: Yes
+# Data_file: /usr/share/EMBOSS/data/PROSITE/prosite.lines
+#
+#=======================================
+
+Length = 4
+Start = position 353 of sequence
+End = position 356 of sequence
+
+Motif = AMIDATION
+
+QLLATQGKKGV
+     |  |
+   353  356
+
+Length = 4
+Start = position 139 of sequence
+End = position 142 of sequence
+
+Motif = AMIDATION
+
+ILSAATGKKQLRTL
+     |  |
+   139  142
+
+
+#---------------------------------------
+#---------------------------------------
