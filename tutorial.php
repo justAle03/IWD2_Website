@@ -5,81 +5,68 @@ include 'header.php';
 <h2>🧬 Protein Analysis Tutorial</h2>
 
 <p>
-    Welcome to the interactive tutorial! Here you can explore all functionalities of the website using the provided example dataset 
-    (<strong>glucose-6-phosphatase proteins in Aves</strong>). This tutorial is designed to guide you through the workflow and explain 
-    the biological significance behind each analysis step.
+    Welcome to the interactive tutorial! Here you can explore the full set of results that you can obtain through the various functionalities of the website using the provided example dataset 
+    (<strong>glucose-6-phosphatase proteins in Aves</strong>). This interactive tutorial is designed to show you the type of results you can generate through through the workflow so you can decide which tools to try!
 </p>
 
 <!-- Example Dataset (Preview) -->
 <h3>📋 Example Dataset (Preview)</h3>
 <p>
-    This section shows a preview of the protein dataset. The table displays approximately 50 records. 
-    <strong>Interpretation:</strong> Look for variation in protein names and species to understand the diversity within the dataset.
-    For more details on data formats, refer to the <a href="https://www.ncbi.nlm.nih.gov/books/NBK21185/" target="_blank">FASTA format documentation</a>.
+    This section shows a preview of the underlying protein dataset. The table displays 945 records.You can scroll down to explore what species are featured within the example dataset.
 </p>
 <div class="embed-container">
-    <iframe src="view_example.php?limit=50" style="width: 100%; height: 400px; border: 1px solid #ccc;"></iframe>
+    <iframe src="view_example.php" style="width: 100%; height: 400px; border: 1px solid #ccc;"></iframe>
 </div>
 <hr>
 
 <!-- Interactive Search within Example Dataset -->
 <h3>🔎 Search within Example Dataset</h3>
 <p>
-    Use this tool to filter proteins by accession, protein name, or species. The search function helps you quickly identify proteins of interest.
-    <strong>Interpretation:</strong> After searching, the results table will highlight records that match your criteria. 
-    For further guidance on effective querying, see <a href="https://www.ncbi.nlm.nih.gov/books/NBK179288/" target="_blank">NCBI E-utilities documentation</a>.
+    Use this tool to search proteins by accession, protein name or species. You can explore using full or partial search terms. The search function can help you to quickly identify proteins of interest and even create subsets to use for further analysis.
 </p>
 <div class="embed-container">
-    <iframe src="p2_embed.php?limit=50" style="width: 100%; height: 400px; border: 1px solid #ccc;"></iframe>
+    <iframe src="p2_embed.php" style="width: 100%; height: 400px; border: 1px solid #ccc;"></iframe>
 </div>
 <hr>
 
 <!-- FASTA File View -->
 <h3>📂 View Example FASTA Dataset</h3>
 <p>
-    This section shows the same data in FASTA format, a common format for storing sequence data.
-    <strong>Interpretation:</strong> Notice the header line containing the accession, protein name, and species, followed by the sequence.
-    For more on FASTA, consult <a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=FAQ" target="_blank">NCBI FASTA FAQ</a>.
+    This section shows the same data in FASTA format, a common format for storing sequence data. Note how each record starts with ">" and the relevant accession code.If you scroll through the fasta file, you will be able to quickly see the sequences in more depth, having access to the specific aminoacid composition of each protein. 
 </p>
 <div class="embed-container">
-    <iframe src="view_fasta_embed.php?limit=50" style="width: 100%; height: 300px; border: 1px solid #ccc;"></iframe>
+    <iframe src="view_fasta_embed.php" style="width: 100%; height: 300px; border: 1px solid #ccc;"></iframe>
 </div>
 <hr>
 
 <!-- Alignment View -->
 <h3>📑 Sequence Alignment (Clustal Omega)</h3>
 <p>
-    Sequence alignment arranges protein sequences to highlight regions of similarity, which can indicate structural or functional importance.
-    <strong>Interpretation:</strong> Regions that remain conserved across species may be critical for the protein's function. 
-    For more details, check the <a href="https://www.ebi.ac.uk/Tools/msa/clustalo/" target="_blank">Clustal Omega documentation</a>.
+    Sequence alignment arranges protein sequences to highlight regions of similarity which can indicate structural or functional importance. Regions that remain conserved across species may be critical for the protein's function. 
 </p>
 <div class="embed-container">
-    <iframe src="alignment_embed.php?limit=50" style="width: 100%; height: 500px; border: 1px solid #ccc;"></iframe>
+    <iframe src="alignment_embed.php" style="width: 100%; height: 500px; border: 1px solid #ccc;"></iframe>
 </div>
 <hr>
 
 <!-- Conservation Plot View -->
-<h3>📊 Conservation Analysis (plotcon)</h3>
+<h3>📊 Conservation Analysis (Plotcon)</h3> 
 <p>
     Conservation plots graphically display how conserved each region is across an alignment. Peaks indicate high conservation,
-    often corresponding to functionally important regions.
-    <strong>Interpretation:</strong> High peaks suggest critical domains, while lower regions may indicate variable loops.
-    See <a href="https://www.ebi.ac.uk/Tools/emboss/plotcon/" target="_blank">EMBOSS plotcon documentation</a> for more.
+    often corresponding to functionally important regions. High peaks suggest critical domains while lower regions may indicate variable loops.
 </p>
 <div class="embed-container">
-    <iframe src="plotcon_embed.php?limit=50" style="width: 100%; height: 500px; border: 1px solid #ccc;"></iframe>
+    <iframe src="plotcon_embed.php" style="width: 100%; height: 500px; border: 1px solid #ccc;"></iframe>
 </div>
 <hr>
 
 <!-- Motif Analysis Report Preview -->
-<h3>📋 Motif Analysis Report (Example Dataset)</h3>
+<h3>📋 Motif Analysis Report (Patmatmotif)</h3>
 <p>
-    Motif analysis searches for conserved protein domains or patterns (motifs) using databases like PROSITE. 
-    <strong>Interpretation:</strong> The report indicates which proteins contain known motifs, offering insights into their potential functions.
-    For more details, see the <a href="https://prosite.expasy.org/" target="_blank">PROSITE website</a>.
+    Motif analysis searches for conserved protein domains or patterns (motifs) using databases like PROSITE. The report indicates which proteins contain known motifs, offering insights into their potential functions.
 </p>
 <div class="embed-container">
-    <iframe src="view_motif_embed.php?limit=50" style="width: 100%; height: 400px; border: 1px solid #ccc;"></iframe>
+    <iframe src="view_motif_embed.php" style="width: 100%; height: 400px; border: 1px solid #ccc;"></iframe>
 </div>
 <hr>
 

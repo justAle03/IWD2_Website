@@ -1,0 +1,15 @@
+SUMMARY: 1 out of 5 proteins returned HitCount > 0.
+
+
+#=======================================
+#
+# Sequence: XP_027301312.1     from: 1   to: 358
+# HitCount: 1
+#
+# Full: Yes
+# Prune: Yes
+# Data_file: /usr/share/EMBOSS/data/PROSITE/prosite.lines
+#
+#=======================================
+
+

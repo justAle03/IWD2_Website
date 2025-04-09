@@ -32,7 +32,7 @@ $plot_file = trim($output);
 if (!empty($plot_file) && file_exists($plot_file)) {
     echo "<p>✅ Conservation plot generated.</p>";
     echo "<img src='$plot_file' alt='Conservation Plot' style='max-width:100%;'><br>";
-    echo "<p><a href='$plot_file' download>📥 Download Plot</a></p>";
+    echo "<p><a class='menu-button' href='$plot_file' download>📥 Download Plot</a></p>";
 } else {
     echo "<p style='color:red;'>❌ Plot generation failed.</p>";
     echo "<pre>$output</pre>";

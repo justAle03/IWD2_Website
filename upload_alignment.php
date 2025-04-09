@@ -1,5 +1,5 @@
 <?php
-session_start();
+include_once 'redir.php';
 include 'header.php';
 
 echo "<h2>📂 Upload Your Alignment File (.aln)</h2>";
@@ -22,8 +22,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['alignment_file'])) {
         $_SESSION['aligned_file'] = $target_file;
 
         echo "<p>✅ Alignment file uploaded successfully: <strong>$target_file</strong></p>";
-        echo "<p><a href='$target_file' download>📥 Download your uploaded alignment file</a></p>";
-        echo "<p><a href='custom_conservation.php' class='button-link'>➡️ Generate Conservation Plot</a></p>";
+        echo "<p><a class='menu-button' href='$target_file' download>📥 Download your uploaded alignment file</a></p>";
+        echo "<p><a class='menu-button' href='custom_conservation.php' class='button-link'>➡️ Generate Conservation Plot</a></p>";
     } else {
         echo "<p style='color:red;'>❌ Upload failed. Please try again.</p>";
     }
@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['alignment_file'])) {
     <p>Select your Clustal alignment file (.aln):</p>
     <input type="file" name="alignment_file" accept=".aln" required>
     <br><br>
-    <input type="submit" value="Upload Alignment File">
+    <input type="submit" value="Upload Alignment File" class="menu-button">
 </form>
 
 <?php include 'footer.php'; ?>

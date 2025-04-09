@@ -1,5 +1,5 @@
 <?php
-session_start();
+include_once 'redir.php';
 include 'header.php';
 
 // Define the directory where job files are stored.

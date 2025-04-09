@@ -13,7 +13,7 @@ session_start();
         <h1>Protein Analysis Website</h1>
     </header>
     <nav>
-    <?php include 'menuf.php'; ?>
+        <?php include 'menuf.php'; ?>
     </nav>
     <main>
         <h2>Welcome!</h2>
@@ -23,6 +23,13 @@ session_start();
             Last Name:  <input type="text" name="last_name" required><br>
             <input type="submit" value="Enter">
         </form>
+        <?php
+        // Move the message to appear below the form.
+        if (isset($_SESSION['complib_msg'])) {
+            echo "<p style='color:blue; font-weight:bold;'>" . htmlspecialchars($_SESSION['complib_msg']) . "</p>";
+            unset($_SESSION['complib_msg']);
+        }
+        ?>
     </main>
     <footer>
         <p>&copy; <?php echo date("Y"); ?> Your Name</p>

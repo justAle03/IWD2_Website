@@ -31,7 +31,7 @@ echo "<p><strong>Number of sequences found:</strong> $sequence_count</p>";
 
 if ($sequence_count === "0" || intval($sequence_count) === 0) {
     echo "<p style='color:red;'>❌ No sequences found for your query.</p>";
-    echo "<p><a href='custom_query.php'>🔙 Back to query form</a></p>";
+    echo "<p><a class='menu-button' href='custom_query.php'>🔙 Back to query form</a></p>";
     exit;
 }
 
@@ -43,7 +43,7 @@ if (intval($sequence_count) > 500 && !isset($_POST['confirmed'])) {
             <input type='hidden' name='confirmed' value='1'>
             <input type='submit' value='⚠️ Proceed Anyway'>
           </form>
-          <p><a href='custom_query.php'>❌ Cancel and revise query</a></p>";
+          <p><a class='menu-button' href='custom_query.php'>❌ Cancel and revise query</a></p>";
     exit;
 }
 
@@ -91,11 +91,11 @@ if (file_exists($output_fasta) && filesize($output_fasta) > 0) {
     $_GET['fasta'] = $output_fasta;
     include 'import_fasta.php';
 
-    echo "<p>✅ Sequences retrieved! <a href='$output_fasta' download>Download FASTA</a></p>";
+    echo "<p>✅ Sequences retrieved! <a class='menu-button' href='$output_fasta' download>Download FASTA</a></p>";
     echo "<p>Your Job ID is: " . htmlspecialchars($jobID) . "</p>";
-    echo "<p><a href='custom_search.php'>➡️ Proceed to Search Your Dataset</a></p>";
-    echo "<p><a href='custom_alignment.php'>➡️ Continue to Alignment and Plot</a></p>";
-    echo "<p/><a href='motif_analysis.php'>➡️ Run Motif Analysis on Dataset</a></p>";
+    echo "<p><a class='menu-button' href='custom_search.php'>➡️ Proceed to Search Your Dataset</a></p>";
+    echo "<p><a class='menu-button' href='custom_alignment.php'>➡️ Continue to Alignment and Plot</a></p>";
+    echo "<p/><a class='menu-button' href='motif_analysis.php'>➡️ Run Motif Analysis on Dataset</a></p>";
 } else {
     echo "<p style='color:red;'>❌ Retrieval failed or file is empty.</p>";
     echo "<p><a href='custom_query.php'>🔙 Back to query form</a></p>";

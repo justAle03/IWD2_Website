@@ -1,5 +1,5 @@
 <?php
-session_start();
+require_once 'redir.php';
 include 'header.php';
 ?>
 <h2>Full Analysis Workflow</h2>
@@ -14,7 +14,7 @@ include 'header.php';
     <input type="text" name="protein_family" required><br>
     <label>Taxonomic Group:</label>
     <input type="text" name="taxonomic_group" required><br>
-    <input type="submit" value="Retrieve Sequences" class="button-link">
+    <input type="submit" value="Retrieve Sequences" class="menu-button">
 </form>
 <p><small>This step fetches sequences from NCBI and may take a few moments.</small></p>
 

@@ -67,21 +67,21 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
     ?>
     
     <p>
-        <a href="custom_download.php" class="button-link">Download as FASTA (Subset)</a>
+        <a href="custom_download.php" class="menu-button">Download as FASTA (Subset)</a>
     </p>
     <br>
     <!-- Links at the bottom -->
     <p>
-        <a href="custom_search.php" class="button-link">Search Again</a>
+        <a href="custom_search.php" class="menu-button">Search Again</a>
         &nbsp;&nbsp;
-        <a href="custom_alignment.php" class="button-link">Align subset (based on search)</a>
+        <a href="custom_alignment.php" class="menu-button">Align subset (based on search)</a>
     </p>
 <?php else: ?>
     <p>No results found.</p>
     <p>
-        <a href="fetch_protein_custom.php" class="button-link">Go back to Custom Query</a>
+        <a href="fetch_protein_custom.php" class="menu-button">Go back to Custom Query</a>
         &nbsp;&nbsp;
-        <a href="custom_search.php" class="button-link">Search Again</a>
+        <a href="custom_search.php" class="menu-button">Search Again</a>
     </p>
 <?php endif; ?>
 
