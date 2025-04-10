@@ -20,5 +20,6 @@
 <a class="menu-button" href="job_history.php">🕒 Job History</a>
 <a class="menu-button" href="credits.php">💡 Credits</a>
 <a class="menu-button" href="help.php">❓ Help</a>
+<a class="menu-button" href="about.php">ℹ️ About</a>
 <a class="menu-button" href="p5.php">🚪 Logout</a>
 

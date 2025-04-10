@@ -31,9 +31,7 @@ session_start();
         }
         ?>
     </main>
-    <footer>
-        <p>&copy; <?php echo date("Y"); ?> Your Name</p>
-    </footer>
+<?php include 'footer.php'; ?>
 </body>
 </html>
 

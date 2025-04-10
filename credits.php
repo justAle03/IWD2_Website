@@ -12,7 +12,7 @@ include 'header.php';
     <li>📊 <strong>EMBOSS Plotcon:</strong> Utilized to generate conservation plots from the sequence alignment, visually highlighting conserved regions.</li>
     <li>🔬 <strong>EMBOSS Patmatmotifs:</strong> Used for motif analysis to scan protein sequences for known functional domains.</li>
     <li>📝 <strong>HTML, PHP, MySQL and Bash Scripting:</strong> These technologies provide the backbone for the website’s analysis and data management.</li>
-    <li>💻 <strong>Git and GitHub:</strong> Employed for version control and to manage the project’s development history.</li>
+    <li>💻 <strong>Git and GitHub:</strong> Employed for version control and to manage the project’s development history. Link to GitHub repository (if you open it, you will see my full name): <a href="https://github.com/justAle03/IWD2_Website" target="_blank">GitHub</a> </li>
 </ul>
 
 <h3>Additional Code and Resource Credits</h3>
