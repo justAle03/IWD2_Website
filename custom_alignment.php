@@ -55,7 +55,7 @@ $aligned_file = "temp_output/{$jobID}_aligned_$timestamp.aln";
 $command = "./perform_alignment.sh " . escapeshellarg($fasta_file) . " " . escapeshellarg($aligned_file);
 $output = shell_exec($command);
 
-echo "<h2>Performing Sequence Alignment...</h2>";
+echo "<h2>Performing sequence alignment...</h2>";
 // (Optional) Debug output: echo "<pre>$command\n$output</pre>";
 
 if (file_exists($aligned_file)) {
@@ -64,7 +64,7 @@ if (file_exists($aligned_file)) {
     echo "<p><a href='$aligned_file' class='menu-button' download>📥 Download Alignment File</a></p>";
     echo "<p><a href='custom_conservation.php' class='menu-button'>➡️ Continue to Conservation Plot</a></p>";
 } else {
-    echo "<p style='color:red;'>❌ Alignment failed. Please check the input sequences or try again with fewer sequences.</p>";
+    echo "<p style='color:red;'>❌ Alignment failed. Please check the input sequences. If you tried to run an alignment on a subset with one sequence only, the alignment will fail.Please try again with a different subset with more than one sequence.</p>";
 }
 
 echo "<p><a href='custom_search.php' class='menu-button'>Search Again</a></p>";

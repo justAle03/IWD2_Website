@@ -10,7 +10,6 @@ $fasta_preview = implode('', $fasta_lines);
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Example FASTA Dataset (Preview)</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body { padding: 10px; }
@@ -35,9 +34,7 @@ $fasta_preview = implode('', $fasta_lines);
     </style>
 </head>
 <body>
-    <h3>Example FASTA Dataset</h3>
     <pre><?= htmlspecialchars($fasta_preview); ?></pre>
-    <a href="<?= $fasta_file ?>" class="download-link" download>⬇️ Download Full FASTA file</a>
 </body>
 </html>
 

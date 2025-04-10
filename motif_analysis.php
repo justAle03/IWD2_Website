@@ -20,7 +20,7 @@ $fastaFile = "temp_output/{$jobID}.fasta";
 <form action="motif_analysis_process.php" method="post">
     <!-- Pass the dynamic FASTA file directly -->
     <input type="hidden" name="fasta_file" value="<?php echo htmlspecialchars($fastaFile); ?>">
-    <input type="submit" value="Run Motif Analysis">
+    <input type="submit" value="Run Motif Analysis" class="menu-button">
 </form>
 <?php include 'footer.php'; ?>
 

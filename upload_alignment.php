@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['alignment_file'])) {
 
 <form method="post" enctype="multipart/form-data">
     <p>Select your Clustal alignment file (.aln):</p>
-    <input type="file" name="alignment_file" accept=".aln" required>
+    <input type="file" class="menu-button" name="alignment_file" accept=".aln" required>
     <br><br>
     <input type="submit" value="Upload Alignment File" class="menu-button">
 </form>

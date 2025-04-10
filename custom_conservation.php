@@ -2,7 +2,7 @@
 session_start();
 include 'header.php';
 
-echo "<h2>🧬 Conservation Plot </h2>";
+echo "<h2> Creating conservation plot... </h2>";
 
 // Ensure the alignment file exists.
 if (!isset($_SESSION['aligned_file']) || !file_exists($_SESSION['aligned_file'])) {

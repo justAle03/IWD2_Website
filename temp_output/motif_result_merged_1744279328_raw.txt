@@ -1,0 +1,145 @@
+########################################
+# Program: patmatmotifs
+# Rundate: Thu 10 Apr 2025 11:02:08
+# Commandline: patmatmotifs
+#    -auto yes
+#    -full
+#    -sequence temp_output/tmp_split_1744279328.TWXw/seq_00
+#    -outfile temp_output/tmp_split_1744279328.TWXw/seq_00.motif
+#    -prune yes
+# Report_format: dbmotif
+# Report_file: temp_output/tmp_split_1744279328.TWXw/seq_00.motif
+########################################
+
+#=======================================
+#
+# Sequence: XP_071897036.1     from: 1   to: 240
+# HitCount: 0
+#
+# Full: Yes
+# Prune: Yes
+# Data_file: /usr/share/EMBOSS/data/PROSITE/prosite.lines
+#
+#=======================================
+
+
+#---------------------------------------
+#---------------------------------------
+########################################
+# Program: patmatmotifs
+# Rundate: Thu 10 Apr 2025 11:02:08
+# Commandline: patmatmotifs
+#    -auto yes
+#    -full
+#    -sequence temp_output/tmp_split_1744279328.TWXw/seq_01
+#    -outfile temp_output/tmp_split_1744279328.TWXw/seq_01.motif
+#    -prune yes
+# Report_format: dbmotif
+# Report_file: temp_output/tmp_split_1744279328.TWXw/seq_01.motif
+########################################
+
+#=======================================
+#
+# Sequence: XP_071884849.1     from: 1   to: 230
+# HitCount: 0
+#
+# Full: Yes
+# Prune: Yes
+# Data_file: /usr/share/EMBOSS/data/PROSITE/prosite.lines
+#
+#=======================================
+
+
+#---------------------------------------
+#---------------------------------------
+########################################
+# Program: patmatmotifs
+# Rundate: Thu 10 Apr 2025 11:02:08
+# Commandline: patmatmotifs
+#    -auto yes
+#    -full
+#    -sequence temp_output/tmp_split_1744279328.TWXw/seq_02
+#    -outfile temp_output/tmp_split_1744279328.TWXw/seq_02.motif
+#    -prune yes
+# Report_format: dbmotif
+# Report_file: temp_output/tmp_split_1744279328.TWXw/seq_02.motif
+########################################
+
+#=======================================
+#
+# Sequence: XP_012954387.1     from: 1   to: 355
+# HitCount: 0
+#
+# Full: Yes
+# Prune: Yes
+# Data_file: /usr/share/EMBOSS/data/PROSITE/prosite.lines
+#
+#=======================================
+
+
+#---------------------------------------
+#---------------------------------------
+########################################
+# Program: patmatmotifs
+# Rundate: Thu 10 Apr 2025 11:02:08
+# Commandline: patmatmotifs
+#    -auto yes
+#    -full
+#    -sequence temp_output/tmp_split_1744279328.TWXw/seq_03
+#    -outfile temp_output/tmp_split_1744279328.TWXw/seq_03.motif
+#    -prune yes
+# Report_format: dbmotif
+# Report_file: temp_output/tmp_split_1744279328.TWXw/seq_03.motif
+########################################
+
+#=======================================
+#
+# Sequence: XP_012954383.1     from: 1   to: 289
+# HitCount: 0
+#
+# Full: Yes
+# Prune: Yes
+# Data_file: /usr/share/EMBOSS/data/PROSITE/prosite.lines
+#
+#=======================================
+
+
+#---------------------------------------
+#---------------------------------------
+########################################
+# Program: patmatmotifs
+# Rundate: Thu 10 Apr 2025 11:02:08
+# Commandline: patmatmotifs
+#    -auto yes
+#    -full
+#    -sequence temp_output/tmp_split_1744279328.TWXw/seq_04
+#    -outfile temp_output/tmp_split_1744279328.TWXw/seq_04.motif
+#    -prune yes
+# Report_format: dbmotif
+# Report_file: temp_output/tmp_split_1744279328.TWXw/seq_04.motif
+########################################
+
+#=======================================
+#
+# Sequence: XP_027301312.1     from: 1   to: 358
+# HitCount: 1
+#
+# Full: Yes
+# Prune: Yes
+# Data_file: /usr/share/EMBOSS/data/PROSITE/prosite.lines
+#
+#=======================================
+
+Length = 4
+Start = position 139 of sequence
+End = position 142 of sequence
+
+Motif = AMIDATION
+
+LLSIASGKRQSKTL
+     |  |
+   139  142
+
+
+#---------------------------------------
+#---------------------------------------

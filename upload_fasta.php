@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['fasta_file'])) {
 
 <form method="post" enctype="multipart/form-data">
     <label>Select a FASTA file to upload:</label><br>
-    <input type="file" name="fasta_file" accept=".fasta,.fa" required>
+    <input type="file" class="menu-button" name="fasta_file" accept=".fasta,.fa" required>
     <br><br>
     <input type="submit" value="Upload FASTA File" class="menu-button">
 </form>

@@ -50,7 +50,7 @@ include 'header.php';
 <hr>
 
 <!-- Conservation Plot View -->
-<h3>📊 Conservation Analysis (Plotcon)</h3> 
+<h3>📊 Conservation Analysis (EMBOSS Plotcon)</h3> 
 <p>
     Conservation plots graphically display how conserved each region is across an alignment. Peaks indicate high conservation,
     often corresponding to functionally important regions. High peaks suggest critical domains while lower regions may indicate variable loops.
@@ -61,7 +61,7 @@ include 'header.php';
 <hr>
 
 <!-- Motif Analysis Report Preview -->
-<h3>📋 Motif Analysis Report (Patmatmotif)</h3>
+<h3>📋 Motif Analysis Report (EMBOSS Patmatmotifs)</h3>
 <p>
     Motif analysis searches for conserved protein domains or patterns (motifs) using databases like PROSITE. The report indicates which proteins contain known motifs, offering insights into their potential functions.
 </p>

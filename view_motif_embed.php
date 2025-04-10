@@ -16,7 +16,6 @@ if (file_exists($report_file)) {
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Example Motif Analysis Report (Preview)</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body { padding: 10px; }
@@ -41,9 +40,7 @@ if (file_exists($report_file)) {
     </style>
 </head>
 <body>
-    <h3>Example Motif Analysis Report (First 10 lines)</h3>
     <pre><?= htmlspecialchars($report_preview); ?></pre>
-    <a href="<?= $report_file ?>" class="download-link" download>⬇️ Download Full Motif Report</a>
 </body>
 </html>
 

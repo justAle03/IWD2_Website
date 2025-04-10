@@ -18,10 +18,10 @@ if (isset($_GET['alignment_file']) && file_exists($_GET['alignment_file'])) {
     echo "<p>Please choose one of the following options:</p>";
     echo "<ul style='list-style:none; padding:0;'>";
     if (file_exists($fullFasta)) {
-        echo "<li><a href='interactive_alignment.php?alignment_file=" . urlencode($fullFasta) . "' class='button-link'>Align Full Dataset</a></li>";
+        echo "<li><a href='interactive_alignment.php?alignment_file=" . urlencode($fullFasta) . "' class='menu-button'>Align Full Dataset</a></li>";
     }
     echo "</ul>";
-    echo "<p><a href='interactive_search.php' class='button-link'>Go back to Search</a></p>";
+    echo "<p><a href='interactive_search.php' class='menu-button'>Go back to Search</a></p>";
     include 'footer.php';
     exit;
 }
@@ -34,11 +34,11 @@ $aligned_file = 'temp_output/example_alignment.aln';
 <?php if (file_exists($aligned_file)): ?>
     <p>Below is the pre‑stored example alignment:</p>
     <pre><?php echo htmlspecialchars(file_get_contents($aligned_file)); ?></pre>
-    <p><a href="<?php echo $aligned_file; ?>" class="button-link" download>Download Alignment File</a></p>
+    <p><a href="<?php echo $aligned_file; ?>" class="menu-button" download>Download Alignment File</a></p>
 <?php else: ?>
     <p style="color:red;">Example alignment file not found.</p>
 <?php endif; ?>
-<p><a href="interactive_conservation.php" class="button-link">Continue to Conservation Plot</a></p>
-<p><a href="interactive_search.php" class="button-link">Search Again</a></p>
+<p><a href="interactive_conservation.php" class="menu-button">Continue to Conservation Plot</a></p>
+<p><a href="interactive_search.php" class="menu-button">Search Again</a></p>
 <?php include 'footer.php'; ?>
 

@@ -21,8 +21,8 @@ session_start();
         <form action="complib_process.php" method="post">
             First Name: <input type="text" name="first_name" required><br>
             Last Name:  <input type="text" name="last_name" required><br>
-            <input type="submit" value="Enter">
-        </form>
+            <input type="submit" class="menu-button" value="Login">
+	</form>
         <?php
         // Move the message to appear below the form.
         if (isset($_SESSION['complib_msg'])) {

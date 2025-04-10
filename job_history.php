@@ -59,7 +59,7 @@ function generateFileLink($file, $jobID) {
     } else {
         $label = "Download " . strtoupper($ext) . " file";
     }
-    return "<a href='$file' class='button-link' download>$label</a>";
+    return "<a href='$file' class='menu-button' download>$label</a>";
 }
 ?>
 

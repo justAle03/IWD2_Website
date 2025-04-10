@@ -2,8 +2,8 @@
 <div class="dropdown">
     <a class="menu-button">🧪 Click Me!</a>
     <div class="dropdown-content">
-        <a href="tutorial.php">📘 Interactive Tutorial</a>
-        <a href="interactive_example.php">📗 Interactive Demo</a>
+	<a href="interactive_example.php">📗 Interactive Demo</a>
+	<a href="tutorial.php">📘 Interactive Tutorial</a>
     </div>
 </div>
 

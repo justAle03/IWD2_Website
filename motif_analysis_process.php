@@ -22,9 +22,11 @@ if (!file_exists($finalReport)) {
 
 $reportContent = file_get_contents($finalReport);
 ?>
+<h2> Generating motif analysis report... </h2> 
+<p>✅ Motif analysis report generated.</p>
 <div style="max-height:600px; overflow:auto; border:1px solid #ccc; padding:10px; background-color:#f9f9f9;">
     <pre><?php echo htmlspecialchars($reportContent); ?></pre>
 </div>
-<p><a href="<?php echo $finalReport; ?>" download>Download Motif Analysis Report</a></p>
+<p><a class="menu-button"  href="<?php echo $finalReport; ?>" download>Download Motif Analysis Report</a></p>
 <?php include 'footer.php'; ?>
 

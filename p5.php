@@ -11,7 +11,8 @@ session_destroy();
 </head>
 <body>
     <h2>You have been logged out.</h2>
-    <p><a href="complib.php">Login again</a></p>
+    <p>Sad to see you leaving, glad you have been here! If you change your mind:</p>
+    <p><a class="menu-button" href="complib.php">Login again</a></p>
 </body>
 </html>
 

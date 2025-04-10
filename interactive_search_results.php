@@ -30,7 +30,7 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <h2>Search Within Example Dataset</h2>
 <form method="post">
     Enter keyword or partial word: <input type="text" name="search_query" required>
-    <input type="submit" value="Search" class="button-link">
+    <input type="submit" value="Search" class="menu-button">
 </form>
 
 <?php if ($_SERVER['REQUEST_METHOD'] === 'POST'): ?>
@@ -65,14 +65,14 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
             $_SESSION['subset_fasta'] = $subsetFasta;
         ?>
         <br>
-        <a href="custom_download.php" class="button-link">Download search results as FASTA</a>
+        <a href="custom_download.php" class="menu-button">Download search results as FASTA</a>
         <br><br>
-        <a href="interactive_search.php" class="button-link">Search again</a>
+        <a href="interactive_search.php" class="menu-button">Search again</a>
         &nbsp;&nbsp;
-        <a href="interactive_alignment.php" class="button-link">Continue to alignment (uses full dataset)</a> 
+        <a href="interactive_alignment.php" class="menu-button">Continue to alignment (uses full dataset)</a> 
     <?php else: ?>
         <p>No results found matching your query.</p>
-        <a href="interactive_search.php" class="button-link">Search Again</a>
+        <a href="interactive_search.php" class="menu-button">Search Again</a>
     <?php endif; ?>
 <?php endif; ?>
 </body>

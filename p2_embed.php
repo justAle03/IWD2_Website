@@ -23,14 +23,12 @@ if (isset($_POST["search_query"])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Interactive Example Dataset Search</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h2>Search Within Example Dataset</h2>
 <form method="post">
     Enter keyword or partial word: <input type="text" name="search_query" required>
-    <input type="submit" value="Search">
+    <input type="submit" class="menu-button" value="Search">
 </form>
 
 <?php if ($_SERVER['REQUEST_METHOD'] === 'POST'): ?>
@@ -54,7 +52,6 @@ if (isset($_POST["search_query"])) {
             <?php endforeach; ?>
         </table>
         <br>
-        <a href="download.php?query=<?= urlencode($_POST['search_query']) ?>">Download Search Results as FASTA</a>
     <?php else: ?>
         <p>No results found matching your query.</p>
     <?php endif; ?>

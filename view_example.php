@@ -18,11 +18,9 @@ try {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Example Dataset Preview</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h2>Example Protein Dataset (Preview)</h2>
 <table border="1">
     <tr>
         <th>Accession</th>

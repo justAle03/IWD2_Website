@@ -41,7 +41,7 @@ if (intval($sequence_count) > 500 && !isset($_POST['confirmed'])) {
             <input type='hidden' name='protein_family' value='" . htmlspecialchars($protein_family) . "'>
             <input type='hidden' name='taxonomic_group' value='" . htmlspecialchars($taxonomic_group) . "'>
             <input type='hidden' name='confirmed' value='1'>
-            <input type='submit' value='⚠️ Proceed Anyway'>
+            <input type='submit' value='⚠️ Proceed Anyway' class='menu-button'>
           </form>
           <p><a class='menu-button' href='custom_query.php'>❌ Cancel and revise query</a></p>";
     exit;
